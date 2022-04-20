@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Flexbox Crash Course</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">Flexbox</div>
+        <ul class="nav">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="header">
+      <div class="container">
+        <div>
+          <h1>Flexbox Crash Course</h1>
+          <p>
+            This crash course was created by Brad Traversy to help you learn the
+            basics of flexbox. Flexbox is a very important and useful tool in
+            CSS.
+          </p>
+        </div>
+        <img src="https://traversymedia.com/images/grid.svg" alt="" />
+      </div>
+    </header>
+
+    <section class="boxes">
+      <div class="container">
+        <div class="box">
+          <h2><i class="fas fa-arrows-alt-v"></i> Alignment & Space</h2>
+          <p>
+            A more efficient way to lay out, align and distribute space among
+            items in a container
+          </p>
+        </div>
+
+        <div class="box">
+          <h2><i class="fas fa-arrows-alt"></i>Tricky Positioning</h2>
+          <p>
+            Flexbox usually solves tricky problems including how to position or
+            dynamically resize elements on a page
+          </p>
+        </div>
+
+        <div class="box">
+          <h2><i class="fas fa-mobile"></i>Responsive Design</h2>
+          <p>
+            Flexbox makes building a website layout (and making it responsive!)
+            much, much easier
+          </p>
+        </div>
+      </div>
+    </section>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyAENuvTplNLqeUzuUkBsakmigJ0U7yVrUs",
+        authDomain: "flexbox-f08e6.firebaseapp.com",
+        projectId: "flexbox-f08e6",
+        storageBucket: "flexbox-f08e6.appspot.com",
+        messagingSenderId: "766344024758",
+        appId: "1:766344024758:web:ce6293c92f9fd39ee94c17",
+        measurementId: "G-8WFV87EP3X"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+  </body>
+</html>
